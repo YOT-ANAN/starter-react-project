@@ -9,7 +9,7 @@ export default function PrivateRoute({ children, ...rest }) {
     <Route
       {...rest}
       render={({ location }) =>
-        getStorage("token") ? (
+        getStorage("token-starter") ? (
           children
         ) : (
           <Redirect
