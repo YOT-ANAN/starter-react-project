@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
-import { Route, Redirect } from "react-router-dom";
-import { getStorage } from "../utils/functions/localStorage";
+import React, { useEffect } from "react"
+import { Route, Redirect } from "react-router-dom"
+import { getStorage } from "../utils/functions/localStorage"
 export default function PrivateRoute({ children, ...rest }) {
   useEffect(() => {
-    return () => {};
-  }, []);
+    return () => {}
+  }, [])
   return (
     <Route
       {...rest}
@@ -21,5 +21,5 @@ export default function PrivateRoute({ children, ...rest }) {
         )
       }
     />
-  );
+  )
 }
