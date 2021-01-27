@@ -1,4 +1,4 @@
-const colors = require("./src/configs/constants/colors");
+const colors = require("tailwindcss/colors");
 module.exports = {
   purge: {
     mode: "layers",
